@@ -2,7 +2,7 @@ import yt_dlp
 
 def download_subtitles(video_url, language='en', subtitle_format='srt'):
     ydl_opts = {
-        'skip_download': True,
+        'skip_download': False,
         'writesubtitles': True,
         'subtitleslangs': [language],
         'subtitlesformat': subtitle_format,
